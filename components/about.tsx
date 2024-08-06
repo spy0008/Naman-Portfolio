@@ -1,18 +1,32 @@
 "use client";
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import SectionHeading from './section-heading'
 import { motion } from 'framer-motion'
+import { useActiveSectionCntext } from '@/context/active-section-context';
+import { useInView } from 'react-intersection-observer'
 
 const About = () => {
+  const { ref, inView } = useInView();
+  const { setActiveSection } = useActiveSectionCntext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("About");
+    }
+  }, [inView, setActiveSection])
+
+  
   return (
-    <motion.section className='mb-28 max-w-[45rem] text-center leading-8 sm:mb-40'
+    <motion.section className='mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-m-36'
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
+      id='about'
+      ref={ref}
     >
-        <SectionHeading>About me</SectionHeading>
-        <p className="mb-3 mt-8 px-4 text-black">
+      <SectionHeading>About me</SectionHeading>
+      <p className="mb-3 mt-8 px-4 text-black">
         After graduating with a degree in{" "}
         <span className="font-medium">Accounting</span>, I decided to pursue my
         passion for programming. I enrolled in a coding bootcamp and learned{" "}
