@@ -5,22 +5,21 @@ import SectionHeading from './section-heading';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { experiencesData } from '@/lib/data';
-// import { useInView } from 'framer-motion';
-import { useInView } from "react-intersection-observer";
+import { useSectionInView } from '@/lib/myHooks';
 
 export default function Experience() {
-    const { ref, inView } = useInView({
-        triggerOnce: true,
-    });
+    const { ref } = useSectionInView('Experience');
+    
     return (
-        <section ref={ref} id='experience'>
+        <section ref={ref} 
+         id='experience' className='scroll-mt-[6rem] mb-28 sm:mb-40'>
             <SectionHeading>My Experience</SectionHeading>
             <VerticalTimeline lineColor=''>
                 {
                     experiencesData.map((item, index) => (
                         <React.Fragment key={index}>
                             <VerticalTimelineElement
-                                visible={inView}   
+                                visible={true}   
                                 contentStyle={{
                                     background: "#f3f4f6",
                                     boxShadow: "none",
@@ -39,7 +38,7 @@ export default function Experience() {
                                     fontSize: "1.5rem",
                                 }}
                             >
-                                <h3 className='font-semibold capitalize'>{item.title}</h3>
+                                <h3 className='font-bold capitalize'>{item.title}</h3>
                                 <p className='font-normal !mt-0'>{item.location}</p>
                                 <p className='!mt-1 !font-normal text-zinc-700'>{item.description}</p>
                             </VerticalTimelineElement>
