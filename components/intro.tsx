@@ -71,7 +71,7 @@ const {
             delay: 0.1,
         }}
       >
-        <Link href="#contact" className='bg-orange-600 group cursor-pointer text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-orange-400 active:scale-100 transition'onClick={() => {
+        <Link href="#contact" className='bg-orange-600 group cursor-pointer text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-orange-400 active:scale-100 transition dark:bg-gray-900'onClick={() => {
           setActiveSection("Contact");
           setTimeOfLastClick(Date.now());
         }} >
@@ -79,15 +79,15 @@ const {
         className='opacity-70 group-hover:translate-x-1 transition'/> 
         </Link>
 
-        <a className='bg-green-600 group  cursor-pointer text-white px-7 py-3 flex items-center gap-2 rounded-full  outline-none focus:scale-110 hover:scale-110 hover:bg-green-400 active:scale-100 transition' href='/CV.pdf' download>Download CV <HiDownload className='opacity-60 group-hover:translate-y-1  transition'/>
+        <a className='bg-green-600 group  cursor-pointer text-white px-7 py-3 flex items-center gap-2 rounded-full  outline-none focus:scale-110 hover:scale-110 hover:bg-green-400 active:scale-100 transition dark:bg-white/10' href='/CV.pdf' download>Download CV <HiDownload className='opacity-60 group-hover:translate-y-1  transition'/>
         </a>
 
-        <a className='bg-white text-blue-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:bg-blue-200 hover:text-blue-800 active:scale-100 transition cursor-pointer borderBlack ' href="https://www.linkedin.com/in/naman-sompura-395567312/" target='www.linkedin.com/in/naman-sompura-395567312'>
+        <a className='bg-white text-blue-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:bg-blue-200 hover:text-blue-800 active:scale-100 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60' href="https://www.linkedin.com/in/naman-sompura-395567312/" target='www.linkedin.com/in/naman-sompura-395567312'>
             <BsLinkedin />
         </a>
 
         <a className='bg-white text-gray-700 text-[1.35rem] p-4 flex items-center gap-2 rounded-full
-         focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 hover:bg-gray-200 active:scale-100 transition cursor-pointer borderBlack'  href="https://github.com/Spy0008" target='_blank'>
+         focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 hover:bg-gray-200 active:scale-100 transition cursor-pointer borderBlack  dark:bg-white/10 dark:text-white/60'  href="https://github.com/Spy0008" target='_blank'>
             <BsGithub />
         </a>
 
