@@ -40,7 +40,7 @@ export default function Skills() {
               }
               custom={index}
              
-              className='bg-zinc-200 border border-black/[0.1] rounded-xl px-5 py-3 shadow-xl' key={index}>{skill}</motion.li>
+              className='bg-zinc-200 border border-black/[0.1] rounded-xl px-5 py-3 shadow-xl dark:bg-white/10 dark:text-white/80' key={index}>{skill}</motion.li>
             ))
           }
         </ul>

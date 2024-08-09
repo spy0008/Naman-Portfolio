@@ -6,7 +6,6 @@ import { motion } from 'framer-motion'
 import { useSectionInView } from '@/lib/myHooks';
 import { sendEmail } from '@/actions/sendEmail';
 import SubmitBtn from './submit.btn';
-import { error } from 'console';
 import toast from 'react-hot-toast';
 
 export default function Contact() {
@@ -28,7 +27,7 @@ export default function Contact() {
     }}
     >
        <SectionHeading>Contact me</SectionHeading>
-       <p className='text-zinc-700 -mt-5'>Please contact me directly at <a className='underline' href='mailto:example@gmail.com'>example@gmail.com</a> or through this from.</p>
+       <p className='text-zinc-700 -mt-5 dark:text-white/80'>Please contact me directly at <a className='underline' href='mailto:example@gmail.com'>example@gmail.com</a> or through this from.</p>
        <form action={async formData => {
         const { data, error} = await sendEmail(formData);
 
@@ -38,9 +37,9 @@ export default function Contact() {
         }
         toast.success("Email sent successfully");
        }}
-        className='mt-10 flex flex-col'>
-        <input name='senderEmail'  type="email" required className='h-14 rounded-lg borderBlack px-4' maxLength={500} placeholder='Your Email'/>
-        <textarea maxLength={5000} name='message' className='h-52 my-3 rounded-lg borderBlack p-4' placeholder='Your message' required/>
+        className='mt-10 flex flex-col dark:text-black'>
+        <input name='senderEmail'  type="email" required className='h-14 rounded-lg borderBlack px-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none' maxLength={500} placeholder='Your Email'/>
+        <textarea maxLength={5000} name='message' className='h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all outline-none' placeholder='Your message' required/>
         <SubmitBtn />
        </form>
     </motion.section>
