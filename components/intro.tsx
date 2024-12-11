@@ -55,7 +55,7 @@ const {
           opacity: 1,
           y: 0,
         }}
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-2xl flex-wrap"
       >
         <span className="font-bold">Hello, I'm Naman.</span> I'm a{" "}
         <span className="font-bold"> Front-End developer And Towards To Full-Stack</span> As a{" "}
