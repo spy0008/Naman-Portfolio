@@ -61,7 +61,7 @@ const {
         <span className="font-bold"> Full-Stack</span> As a{" "}
         <span className="font-bold">Beginner</span>,  I enjoy
         building <span className="italic">sites</span>. My focus is {" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="underline">React.js</span>.
       </motion.p>
 
       <motion.div className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'

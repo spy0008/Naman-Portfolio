@@ -46,9 +46,9 @@ export const experiencesData = [
     title: "Front-End Developer",
     location: "sagwara, india",
     description:
-      "I worked as a front-end developer for 0 years in 0 job and 0 year in another job. I also upskilled to the full stack.",
+      "front-end developer fresher.",
     icon: React.createElement(CgWorkAlt),
-    date: "20__ - 20__",
+    date: "2024",
   },
   {
     title: "Full-Stack Developer",
@@ -62,24 +62,24 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Animated site",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind"],
+      "Nodejs and Express Js for APIs creating and Signaling server implemented with NodeJs and Socket.io for Real Time Messages sending functionality and Zustand for managing states",
+    tags: ["React", "GSAP", "Tailwind"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "Real Time chat site",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "real time chat used socket  io which provide real time responses to user also give image sharing functionality.",
+    tags: ["React.js", "Node.js", "Express.js", "Tailwind", "Redux","MongoDB", "Socket.io","Zustand"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "Blog site",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "Tailwind", "Framer"],
+      "Created a personal blog site using MERN Stack or made designed and build responsive user Friendly interface for mobile and desktop and implemented admin panel also and dark mode.",
+    tags: ["React.js", "Node.js", "Express.js", "Tailwind", "Redux","MongoDB"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
