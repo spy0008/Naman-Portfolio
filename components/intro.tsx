@@ -29,7 +29,7 @@ const {
                 duration: 0.2,
               }}
             >
-            <Image src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fHww" alt='imge' width="192" height="192" quality="95" priority={true} className='h-24 w-24 rounded-full object-cover border-[0.35rem] border-blue-200 shadow-xl'/>
+            <Image src="/myphoto.jpg" alt='imge' width="192" height="192" quality="95" priority={true} className='h-24 w-24 rounded-full object-cover border-[0.35rem] border-blue-200 shadow-xl'/>
             </motion.div>
             <motion.span className='absolute bottom-0 left-0  text-4xl'
             initial={{ opacity:0, scale: 0 }}
@@ -58,9 +58,9 @@ const {
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-2xl flex-wrap"
       >
         <span className="font-bold">Hello, I'm Naman.</span> I'm a{" "}
-        <span className="font-bold"> Front-End developer And Towards To Full-Stack</span> As a{" "}
+        <span className="font-bold"> Full-Stack</span> As a{" "}
         <span className="font-bold">Beginner</span>,  I enjoy
-        building <span className="italic">sites & apps</span>. My focus is {" "}
+        building <span className="italic">sites</span>. My focus is {" "}
         <span className="underline">React (Next.js)</span>.
       </motion.p>
 
